@@ -55,6 +55,7 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
 
   &:hover {
     color: ${({ theme}) => theme.colors.primaryBright};
+    background:transparent;
   }
 `;
 
