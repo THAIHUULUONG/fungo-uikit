@@ -19,15 +19,15 @@ export const status = {
 };
 
 export const links: MenuItemsType[] = [
-  // {
-  //   label: "Home",
-  //   href: "/",
-  //   icon: "Home",
-  // },
   {
-    label: "Trade",
+    label: "Home",
+    href: "/",
+    icon: "Home",
+  },
+  {
+    label: "Exchange",
     href: "/swap",
-    icon: "Exchange",
+    icon: "Trade",
   },
   {
     label: "Earns",
@@ -55,44 +55,49 @@ export const links: MenuItemsType[] = [
     icon: "Dipo",
   },
   {
-    label: "",
-    href: "/",
-    icon: "More",
-    items: [
-      {
-        label: "NFT Martketpalce",
-        href: "/nftmarketplace",
-      },
-      // {
-      //   label: "IFO Token Sales",
-      //   href: "/",
-      //   status: status.SOON,
-      // },
-      // {
-      //   type: DropdownMenuItemType.DIVIDER,
-      // },
-      // {
-      //   label: "NFT Collectibles",
-      //   href: "/",
-      // },
-      // {
-      //   label: "Team Leaderboard",
-      //   href: "/",
-      // },
-      // {
-      //   type: DropdownMenuItemType.DIVIDER,
-      // },
-      // {
-      //   label: "Blog",
-      //   href: "/",
-      // },
-      // {
-      //   label: "Docs & Guides",
-      //   href: "/",
-      //   type: DropdownMenuItemType.EXTERNAL_LINK,
-      // },
-    ],
+    label: "NFT Martketpalce",
+    href: "/nftmarketplace",
+    icon: "Martketpalce",
   },
+  // {
+  //   label: "",
+  //   href: "/",
+  //   icon: "More",
+  //   items: [
+  //     {
+  //       label: "Info & Analytics",
+  //       href: "/",
+  //     },
+  //     {
+  //       label: "IFO Token Sales",
+  //       href: "/",
+  //       status: status.SOON,
+  //     },
+  //     {
+  //       type: DropdownMenuItemType.DIVIDER,
+  //     },
+  //     {
+  //       label: "NFT Collectibles",
+  //       href: "/",
+  //     },
+  //     {
+  //       label: "Team Leaderboard",
+  //       href: "/",
+  //     },
+  //     {
+  //       type: DropdownMenuItemType.DIVIDER,
+  //     },
+  //     {
+  //       label: "Blog",
+  //       href: "/",
+  //     },
+  //     {
+  //       label: "Docs & Guides",
+  //       href: "/",
+  //       type: DropdownMenuItemType.EXTERNAL_LINK,
+  //     },
+  //   ],
+  // },
 ];
 
 export const userMenulinks: DropdownMenuItems[] = [

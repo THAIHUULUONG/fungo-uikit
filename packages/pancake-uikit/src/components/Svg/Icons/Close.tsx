@@ -1,16 +1,11 @@
 import React from "react";
-import { useTheme } from "styled-components";
 import Svg from "../Svg";
 import { SvgProps } from "../types";
 
 const Icon: React.FC<SvgProps> = (props) => {
-  const theme = useTheme()
-  const renderColor = theme.isDark ? "#FFFFFF" : "#011226"
   return (
-    <Svg viewBox="0 0 24 25" {...props} style={{fill:"none"}}>
-<path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke={renderColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M15 9.5L9 15.5" stroke={renderColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M9 9.5L15 15.5" stroke={renderColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <Svg viewBox="0 0 24 24" {...props}>
+      <path d="M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997 5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997 6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10997C18.68 6.72997 18.68 6.08997 18.3 5.70997Z" />
     </Svg>
   );
 };
