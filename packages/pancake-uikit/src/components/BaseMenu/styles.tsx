@@ -4,7 +4,7 @@ import { Box, Flex } from "../Box";
 export const InlineMenuContainer = styled(Box)`
   background-color: ${({ theme }) => theme.colors.backgroundAlt};
   border-radius: ${({ theme }) => theme.radii.card};
-  box-shadow: ${({ theme }) => theme.shadows.tooltip};
+  box-shadow: ${({ theme }) => theme.colors.input};
 `;
 
 export const SubMenuContainer = styled(Flex)`
