@@ -1,7 +1,7 @@
 import { Colors } from "./types";
 
 export const baseColors = {
-  failure: "#ED4B9E",
+  failure: "#F15479",
   primary: "#1FC7D4",
   primaryBright: "#49A2F2",
   primaryDark: "#122B41",
@@ -53,7 +53,7 @@ export const lightColors: Colors = {
     backgroundUserInfor:"linear-gradient(151.53deg, #D9DAFF 8.5%, #CCDDFF 97.77%)",
     backgroundNftInfo: "#EFF0FF",
   },
-  backgroundTab: '#FAFBFC',
+  backgroundTab: '#F5F5F5',
   textTab: '#8A94A6',
   borderTab: '#E4E7EB',
   textDark: '#101133',
@@ -78,6 +78,8 @@ export const lightColors: Colors = {
   containerInput:"#E8E9FA",
   backgroundListview:"#F8F8FF",
   backgroundAcionList:"#E8E9FA",
+  modalHeader:"#F5F5F5",
+  backgroundModal:"#FFFFFF"
 };
 
 export const darkColors: Colors = {
@@ -92,7 +94,7 @@ export const darkColors: Colors = {
   dropdown: "#1E1D20",
   dropdownDeep: "#100C18",
   invertedContrast: "#191326",
-  input: "#372F47",
+  input: "#182636",
   inputSecondary: "#262130",
   tertiary: "rgba(73, 162, 242, 0.1)",
   text: "#FFFFFF",
@@ -112,7 +114,7 @@ export const darkColors: Colors = {
     backgroundUserInfor:"linear-gradient(162.57deg, rgba(44, 46, 116, 0.5) 22.42%, rgba(75, 22, 107, 0.5) 82.74%)",
     backgroundNftInfo: "linear-gradient(190.03deg, rgba(44, 46, 116, 0.5) 17.62%, rgba(75, 22, 107, 0.5) 83.22%)",
   },
-  backgroundTab: '#FAFBFC',
+  backgroundTab: '#182636',
   textTab: '#8A94A6',
   borderTab: '#E4E7EB',
   textDark: '#101133',
@@ -137,4 +139,6 @@ export const darkColors: Colors = {
   containerInput:"#101133",
   backgroundListview:"linear-gradient(180deg, rgba(81, 82, 102, 0.5) 24.4%, rgba(71, 71, 96, 0.5) 50%)",
   backgroundAcionList:"rgba(61, 62, 89, 0.02)",
+  modalHeader:"#182636",
+  backgroundModal:" #011226"
 };

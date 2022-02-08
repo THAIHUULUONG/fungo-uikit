@@ -86,6 +86,8 @@ export type Colors = {
   containerInput:string;
   backgroundListview:string;
   backgroundAcionList:string;
+  modalHeader:string;
+  backgroundModal:string;
   
   // Gradients
   gradients: Gradients;

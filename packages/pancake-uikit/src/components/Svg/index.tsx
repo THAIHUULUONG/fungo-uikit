@@ -153,6 +153,7 @@ export { default as GlobeIcon } from "./Icons/Globe";
 export { default as MembershipIcon } from "./Icons/Membership";
 export { default as DipoIcon } from "./Icons/Dipo";
 export { default as MartketpalceIcon } from "./Icons/Martketpalce";
+export { default as ExchangeIcon } from "./Icons/Exchange";
 
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";
