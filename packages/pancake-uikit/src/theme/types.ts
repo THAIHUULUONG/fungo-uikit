@@ -1,3 +1,5 @@
+import { StringFormatDefinition } from "ajv";
+
 export type Breakpoints = string[];
 
 export type MediaQueries = {
@@ -6,7 +8,6 @@ export type MediaQueries = {
   md: string;
   lg: string;
   xl: string;
-  xxl: string;
   nav: string;
 };
 
@@ -26,7 +27,6 @@ export type Shadows = {
   warning: string;
   focus: string;
   inset: string;
-  tooltip: string;
 };
 
 export type Gradients = {
@@ -37,6 +37,10 @@ export type Gradients = {
   violet: string;
   violetAlt: string;
   gold: string;
+  backgroundContainer: string;
+  backgroundUpgrade:string;
+  backgroundUserInfor:string;
+  backgroundNftInfo:string;
 };
 
 export type Colors = {
@@ -58,12 +62,31 @@ export type Colors = {
   background: string;
   backgroundDisabled: string;
   backgroundAlt: string;
-  backgroundAlt2: string;
   text: string;
   textDisabled: string;
   textSubtle: string;
   disabled: string;
-
+  textDark: string;
+  borderLine: string;
+  membershipwrapperheaderbackground:string;
+  upgradelevelContainer:string;
+  borderUpgradeTableHeader:string;
+  backgrounddark:string;
+  backgroundlight:string;
+  backgroundContainerMembership:string;
+  divider: string;
+  secondaryDark:string;
+  backgroundDark:string;
+  thirdDark:string;
+  textDarkSecondary:string;
+  bgCardProject:string;
+  textSecondary:string;
+  textThird:string;
+  bgPaste:string;
+  containerInput:string;
+  backgroundListview:string;
+  backgroundAcionList:string;
+  
   // Gradients
   gradients: Gradients;
 
@@ -73,6 +96,16 @@ export type Colors = {
   gold: string;
   silver: string;
   bronze: string;
+  backgroundTab: string,
+  textTab: string,
+  borderTab: string,
+
+  // DIPO Sub background
+  dipoMainBackground: string,
+  dipoContainerBackground: string,
+
+  // Home Price
+  homePrice: string
 };
 
 export type ZIndices = {

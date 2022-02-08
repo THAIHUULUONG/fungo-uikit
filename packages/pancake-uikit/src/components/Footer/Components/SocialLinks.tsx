@@ -12,27 +12,33 @@ const SocialLinks: React.FC<FlexProps> = ({ ...props }) => (
     {socials.map((social, index) => {
       const iconProps = {
         iconName: social.icon,
-        width: "20px",
-        color: darkColors.textSubtle,
+        width: "28px",
+        color: "textSubtle",
         style: { cursor: "pointer" },
       };
-      const mr = index < socials.length - 1 ? "24px" : 0;
-      if (social.items) {
-        return (
-          <Dropdown key={social.label} position="top" target={<IconComponent {...iconProps} mr={mr} />}>
-            {social.items.map((item) => (
-              <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
-                {item.label}
-              </Link>
-            ))}
-          </Dropdown>
-        );
-      }
-      return (
+      const mr = index < socials.length - 1 ? "20px" : 0;
+      return(
         <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
-          <IconComponent {...iconProps} />
-        </Link>
-      );
+           <IconComponent {...iconProps} />
+      </Link>
+      )
+      
+      // if (social.items) {
+      //   return (
+      //     <Dropdown key={social.label} position="top" target={<IconComponent {...iconProps} mr={mr} />}>
+      //       {social.items.map((item) => (
+      //         <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
+      //           {item.label}
+      //         </Link>
+      //       ))}
+      //     </Dropdown>
+      //   );
+      // }
+      // return (
+      //   <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
+      //     <IconComponent {...iconProps} />
+      //   </Link>
+      // );
     })}
   </Flex>
 );

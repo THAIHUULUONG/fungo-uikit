@@ -20,104 +20,84 @@ export const status = {
 
 export const links: MenuItemsType[] = [
   {
-    label: "Trade",
-    href: "/swap",
-    icon: "Swap",
-    items: [
-      {
-        label: "Exchange",
-        href: "/swap",
-      },
-      {
-        label: "Liquidity",
-        href: "/liquidity",
-      },
-      {
-        label: "Charts",
-        href: "/charts",
-        iconName: "Chart",
-        isMobileOnly: true,
-      },
-    ],
+    label: "Home",
+    href: "/",
+    icon: "Home",
   },
   {
-    label: "Earn",
+    label: "Exchange",
+    href: "/swap",
+    icon: "Trade",
+  },
+  {
+    label: "Earns",
     href: "/earn",
     icon: "Earn",
     items: [
       {
-        label: "Earn",
+        label: "Farms",
         href: "/earn",
       },
       {
-        label: "Yield Farms",
-        href: "/farms",
-      },
-      {
-        label: "Syrup pools",
+        label: "Pools",
         href: "/pools",
       },
     ],
   },
   {
-    label: "Win",
-    href: "/",
-    icon: "Trophy",
-    items: [
-      {
-        label: "Win",
-        href: "/",
-      },
-      {
-        label: "Predictions",
-        href: "/",
-        status: status.LIVE,
-      },
-      {
-        label: "Lottery",
-        href: "/",
-      },
-    ],
+    label: "Membership",
+    href: "/membership",
+    icon: "Membership",
   },
   {
-    label: "",
-    href: "/",
-    icon: "More",
-    items: [
-      {
-        label: "Info & Analytics",
-        href: "/",
-      },
-      {
-        label: "IFO Token Sales",
-        href: "/",
-        status: status.SOON,
-      },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
-      {
-        label: "NFT Collectibles",
-        href: "/",
-      },
-      {
-        label: "Team Leaderboard",
-        href: "/",
-      },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
-      {
-        label: "Blog",
-        href: "/",
-      },
-      {
-        label: "Docs & Guides",
-        href: "/",
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-    ],
+    label: "DIPO",
+    href: "/dipo/live",
+    icon: "Dipo",
   },
+  {
+    label: "NFT Martketpalce",
+    href: "/nftmarketplace",
+    icon: "Martketpalce",
+  },
+  // {
+  //   label: "",
+  //   href: "/",
+  //   icon: "More",
+  //   items: [
+  //     {
+  //       label: "Info & Analytics",
+  //       href: "/",
+  //     },
+  //     {
+  //       label: "IFO Token Sales",
+  //       href: "/",
+  //       status: status.SOON,
+  //     },
+  //     {
+  //       type: DropdownMenuItemType.DIVIDER,
+  //     },
+  //     {
+  //       label: "NFT Collectibles",
+  //       href: "/",
+  //     },
+  //     {
+  //       label: "Team Leaderboard",
+  //       href: "/",
+  //     },
+  //     {
+  //       type: DropdownMenuItemType.DIVIDER,
+  //     },
+  //     {
+  //       label: "Blog",
+  //       href: "/",
+  //     },
+  //     {
+  //       label: "Docs & Guides",
+  //       href: "/",
+  //       type: DropdownMenuItemType.EXTERNAL_LINK,
+  //     },
+  //   ],
+  // },
 ];
 
 export const userMenulinks: DropdownMenuItems[] = [

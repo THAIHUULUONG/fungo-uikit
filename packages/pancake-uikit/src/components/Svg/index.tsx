@@ -148,6 +148,11 @@ export { default as WalletConnectIcon } from "./Icons/WalletConnect";
 export { default as WalletFilledIcon } from "./Icons/WalletFilled";
 export { default as WalletIcon } from "./Icons/Wallet";
 export { default as WarningIcon } from "./Icons/Warning";
+export { default as FacebookIcon } from "./Icons/Facebook";
+export { default as GlobeIcon } from "./Icons/Globe";
+export { default as MembershipIcon } from "./Icons/Membership";
+export { default as DipoIcon } from "./Icons/Dipo";
+export { default as MartketpalceIcon } from "./Icons/Martketpalce";
 
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";

@@ -4,7 +4,7 @@ import { Box, Flex } from "../Box";
 import SocialLinks from "./Components/SocialLinks";
 
 export const StyledFooter = styled(Flex)`
-  background: ${darkColors.backgroundAlt};
+  background: ${({ theme }) => theme.colors.background};
 `;
 
 export const StyledList = styled.ul`
@@ -33,13 +33,9 @@ export const StyledIconMobileContainer = styled(Box)`
 `;
 
 export const StyledToolsContainer = styled(Flex)`
-  border-color: ${darkColors.cardBorder};
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-style: solid;
   padding: 24px 0;
   margin-bottom: 24px;
-
+  flex-direction: row-reverse;
   ${({ theme }) => theme.mediaQueries.sm} {
     border-top-width: 0;
     border-bottom-width: 0;
@@ -55,3 +51,26 @@ export const StyledSocialLinks = styled(SocialLinks)`
 export const StyledText = styled.span`
   color: ${darkColors.text};
 `;
+export const CustomFlex = styled(Flex)`
+  width:100%;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:1rem;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  }
+`
+export const CustomLink = styled.a`
+  color: ${({ theme }) => theme.colors.textSubtle};
+`
+export const ContainerMoreInformation = styled(Flex)`
+  width: 338px;
+  justify-content:space-between;
+  @media only screen and (max-width: 600px) {
+    width:100%;
+    justify-content:space-around;
+    margin-bottom:1rem;
+  }
+`
