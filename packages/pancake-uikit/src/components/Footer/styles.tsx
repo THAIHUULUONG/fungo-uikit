@@ -5,6 +5,11 @@ import SocialLinks from "./Components/SocialLinks";
 
 export const StyledFooter = styled(Flex)`
   background: ${({ theme }) => theme.colors.background};
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 0px !important;
+    padding-top:20px !important;
+    padding-bottom:20px !important;
+  }
 `;
 
 export const StyledList = styled.ul`
@@ -14,6 +19,7 @@ export const StyledList = styled.ul`
   ${({ theme }) => theme.mediaQueries.md} {
     margin-bottom: 0px;
   }
+ 
 `;
 
 export const StyledListItem = styled.li`

@@ -46,9 +46,11 @@ const getIcon = (variant: AlertProps["variant"] = variants.INFO) => {
 
 const IconLabel = styled.div<ThemedIconLabel>`
   background-color: ${getThemeColor};
-  border-radius: 16px 0 0 16px;
+  border-radius: 5px 0 0 5px;
   color: ${({ theme }) => theme.alert.background};
   padding: 12px;
+  display:flex;
+  align-items:center;
 `;
 
 const withHandlerSpacing = 32 + 12 + 8; // button size + inner spacing + handler position
@@ -70,8 +72,8 @@ const CloseHandler = styled.div`
 const StyledAlert = styled(Flex)`
   position: relative;
   background-color: ${({ theme }) => theme.alert.background};
-  border-radius: 16px;
-  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  box-shadow: -2px 2px 8px ${({ theme }) => theme.isDark ? "rgba(255,255,255,0.2)" : "rgba(0, 0, 0, 0.25)"};
 `;
 
 const Alert: React.FC<AlertProps> = ({ title, children, variant, onClick }) => {
