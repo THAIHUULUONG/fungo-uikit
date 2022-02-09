@@ -42,6 +42,7 @@ export type Gradients = {
   backgroundUpgrade:string;
   backgroundUserInfor:string;
   backgroundNftInfo:string;
+  bgSecondary:string
 };
 
 export type Colors = {
