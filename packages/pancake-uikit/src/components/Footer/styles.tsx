@@ -76,7 +76,7 @@ export const ContainerMoreInformation = styled(Flex)`
   justify-content:space-between;
   @media only screen and (max-width: 600px) {
     width:100%;
-    justify-content:space-around;
+    justify-content:space-between;
     margin-bottom:1rem;
   }
 `

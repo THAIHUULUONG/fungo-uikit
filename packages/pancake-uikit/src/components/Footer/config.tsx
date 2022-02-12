@@ -96,6 +96,11 @@ export const socials = [
     icon: "Telegram",
     href: "https://t.me/LiveTradeLTD",
   },
+  {
+    label: "Github",
+    icon: "Github",
+    href: "https://ltd.livetrade.io/",
+  },
   // {
   //   label: "Telegram",
   //   icon: "Telegram",
@@ -120,6 +125,10 @@ export const MoreInformation = [
   {
     label: "Smart Contract",
     href: "https://bscscan.com/token/0x0f7cd24e31293b162dcf6211c6ac5bd8efcb81f4",
+  },
+  {
+    label: "Audit",
+    href: "https://docs.livetrade.io/",
   },
 ]
 
