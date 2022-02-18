@@ -83,12 +83,23 @@ const Menu: React.FC<NavProps> = ({
   children,
 }) => {
   const { isMobile } = useMatchBreakpoints();
+  const [windowSize, setWindowSize] = useState(window.innerWidth)
   const [showMenu, setShowMenu] = useState(true);
   const refPrevOffset = useRef(typeof window === "undefined" ? 0 : window.pageYOffset);
 
   const topBannerHeight = isMobile ? TOP_BANNER_HEIGHT_MOBILE : TOP_BANNER_HEIGHT;
 
   const totalTopMenuHeight = banner ? MENU_HEIGHT + topBannerHeight : MENU_HEIGHT;
+
+  useEffect(() => {
+      const handleResize = () => {
+          setWindowSize(window.innerWidth)
+      }
+
+      window.addEventListener('resize', handleResize)
+
+      return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -133,7 +144,7 @@ const Menu: React.FC<NavProps> = ({
           <StyledNav>
             <Flex>
               <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
-              {!isMobile && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />}
+              {windowSize> 840 && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="12px" />}
             </Flex>
             <Flex alignItems="center" height="100%">
               {!isMobile && (
@@ -185,7 +196,7 @@ const Menu: React.FC<NavProps> = ({
             />
           </Inner>
         </BodyWrapper>
-        {isMobile && <BottomNav items={links} activeItem={activeItem} activeSubItem={activeSubItem} />}
+        {windowSize<= 840 && <BottomNav items={links} activeItem={activeItem} activeSubItem={activeSubItem} />}
       </Wrapper>
     </MenuContext.Provider>
   );
