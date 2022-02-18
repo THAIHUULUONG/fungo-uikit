@@ -23,7 +23,7 @@ const AnimatedIconComponent: React.FC<IconComponentType> = ({
       </StyledIconContainer>
       {hasFillIcon && (
         <StyledIconContainer {...props}>
-          <IconElementFill color={activeColor} />
+          <IconElementFill/>
         </StyledIconContainer>
       )}
     </StyledAnimatedIconComponent>

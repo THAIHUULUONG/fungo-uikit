@@ -20,46 +20,75 @@ export const status = {
 
 export const links: MenuItemsType[] = [
   {
-    label: "Trade",
-    href: "/swap",
-    icon: "Swap",
-  },
-  {
-    label: "Earns",
-    href: "/earn",
-    icon: "Earn",
+    label: 'Trade',
+    icon: 'Swap',
+    href: '/swap',
+    showItemsOnMobile: true,
     items: [
       {
-        label: "Farms",
-        href: "/earn",
+        label: 'Exchange',
+        href: '/swap',
       },
       {
-        label: "Pools",
-        href: "/pools",
+        label: 'Liquidity',
+        href: '/liquidity',
       },
     ],
   },
   {
-    label: "Membership",
-    href: "/membership",
-    icon: "Membership",
-  },
-  {
-    label: "DIPO",
-    href: "/dipo/live",
-    icon: "Dipo",
-  },
-  {
-    label: "",
-    href: "/",
-    icon: "More",
+    label: 'Earn',
+    href: '/farms',
+    icon: 'Earn',
     items: [
       {
-        label: "NFT Martketpalce",
-        href: "/nftmarketplace",
+        label:'Farms',
+        href: '/farms',
+      },
+      {
+        label: 'Pools',
+        href: '/pools',
       },
     ],
   },
+  {
+    label: 'Membership',
+    icon: 'Membership',
+    href: '/membership',
+    showItemsOnMobile:true,
+    items: [
+      {
+        label: 'Membership',
+        href: '/membership',
+      },
+    ]
+  },
+  {
+    label: 'DIPO ®',
+    icon: 'Dipo',
+    href: '/dipo/live',
+    showItemsOnMobile:true,
+    items: [
+      {
+        label: 'DIPO®',
+        href: '/dipo/live',
+      },
+    ]
+  },
+  {
+    label: 'More',
+    icon: 'More',
+    href: '/repo',
+    items: [
+      {
+        label: 'Repo',
+        href: '/repo',
+      },
+      {
+        label: 'Marketplace',
+        href: '/nftmarketplace',
+      },
+    ]
+  }
 ];
 
 export const userMenulinks: DropdownMenuItems[] = [
