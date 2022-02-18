@@ -21,7 +21,7 @@ const BottomNavItem: React.FC<BottomNavItemProps> = ({
           iconName={iconName}
           height="22px"
           width="21px"
-          color={isActive ? "secondary" : "textSubtle"}
+          color={isActive ? "primaryBright" : "textSubtle"}
           isActive={isActive}
 
         />
