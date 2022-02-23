@@ -97,8 +97,8 @@ export const socials = [
     href: "https://t.me/LiveTradeLTD",
   },
   {
-    label: "Github",
-    icon: "Github",
+    label: "GitLab",
+    icon: "GitLab",
     href: "https://ltd.livetrade.io/",
   },
   // {
@@ -124,7 +124,7 @@ export const MoreInformation = [
   },
   {
     label: "Smart Contract",
-    href: "https://bscscan.com/token/0x0f7cd24e31293b162dcf6211c6ac5bd8efcb81f4",
+    href: "https://bscscan.com/token/0xDbad544416Df0677254645422bB560AF8408cAe7",
   },
   {
     label: "Audits",
