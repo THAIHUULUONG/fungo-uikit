@@ -40,7 +40,7 @@ export const StyledIconMobileContainer = styled(Box)`
 
 export const StyledToolsContainer = styled(Flex)`
   padding: 24px 0;
-  margin-bottom: 24px;
+  margin-bottom: 24px !important;
   flex-direction: row-reverse;
   ${({ theme }) => theme.mediaQueries.sm} {
     border-top-width: 0;
@@ -80,3 +80,33 @@ export const ContainerMoreInformation = styled(Flex)`
     margin-bottom:1rem;
   }
 `
+export const ContainerFooter = styled(Flex)`
+  width: 338px;
+  justify-content:space-between;
+  align-items:center;
+  @media only screen and (max-width: 600px) {
+    width:100%;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+    flex-wrap:wrap;
+  }
+`
+export const Col = styled(Flex)`
+  width: 50%;
+  @media only screen and (max-width: 600px) {
+    width:100%;
+  }
+  > button {
+    padding-left:0px !important;
+    padding-right:0px !important;
+  }
+`
+export const Row = styled(Flex)`
+  width: 50%;
+  align-items:center;
+  @media only screen and (max-width: 600px) {
+    width:100%;
+  }
+`
+

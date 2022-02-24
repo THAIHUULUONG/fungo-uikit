@@ -13,6 +13,8 @@ import {
   CustomFlex,
   CustomLink,
   ContainerMoreInformation,
+  ContainerFooter,
+  Col, Row
 } from "./styles";
 import { MoreInformation } from "./config"
 import SocialLinks from "./Components/SocialLinks";
@@ -54,16 +56,31 @@ const MenuItem: React.FC<FooterProps> = ({
           order={[1, null, 3]}
           justifyContent="space-between"
         >
-          <Flex order={[2, null, 1]} alignItems="center">
-            <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
-            <LangSelector
-              currentLang={currentLang}
-              langs={langs}
-              setLang={setLang}
-              color="textSubtle"
-              dropdownPosition="top-right"
-            />
-          </Flex>
+          <ContainerFooter order={[2, null, 1]}>
+              <Row>
+                <Col>
+                  <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
+                </Col>
+                <Col>
+                  <LangSelector
+                    currentLang={currentLang}
+                    langs={langs}
+                    setLang={setLang}
+                    color="textSubtle"
+                    dropdownPosition="top-right"
+                  />
+                </Col>
+                
+              </Row>
+              <Row justifyContent="space-between">
+                <Col>
+                  <CustomLink href="https://dapp.livetrade.io/" target="_blank">Old Dapp</CustomLink>
+                </Col>
+                <Col>
+                  <CustomLink href="https://krc.livetrade.io/#/" target="_blank">KRC Dapp</CustomLink>
+                </Col>
+              </Row>
+          </ContainerFooter>
           <Flex justifyContent="space-between" alignItems="center">
               <CakePrice cakePriceUsd={cakePriceUsd} color="textSubtle" />
           </Flex>
