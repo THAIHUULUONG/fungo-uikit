@@ -96,11 +96,11 @@ export const socials = [
     icon: "Telegram",
     href: "https://t.me/LiveTradeLTD",
   },
-  {
-    label: "GitLab",
-    icon: "GitLab",
-    href: "https://ltd.livetrade.io/",
-  },
+  // {
+  //   label: "GitLab",
+  //   icon: "GitLab",
+  //   href: "https://ltd.livetrade.io/",
+  // },
   // {
   //   label: "Telegram",
   //   icon: "Telegram",
