@@ -89,7 +89,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "Twitter",
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/Livetrade_io",
   },
   {
     label: "Telegram",
