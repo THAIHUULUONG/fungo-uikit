@@ -13,6 +13,10 @@ const StyledBottomNav = styled(Flex)`
     padding-bottom: 45px;
   }
   z-index: 20;
+  @media only screen and (max-width: 600px) {
+    padding-left:5px;
+    padding-right:5px;
+  }
 `;
 
 export default StyledBottomNav;

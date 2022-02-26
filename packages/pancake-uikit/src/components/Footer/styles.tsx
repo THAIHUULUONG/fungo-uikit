@@ -9,6 +9,8 @@ export const StyledFooter = styled(Flex)`
     margin-bottom: 0px !important;
     padding-top:20px !important;
     padding-bottom:20px !important;
+    padding-left:10px;
+    padding-right:10px;
   }
 `;
 
@@ -96,6 +98,7 @@ export const Col = styled(Flex)`
   width: 50%;
   @media only screen and (max-width: 600px) {
     width:100%;
+    margin-bottom:8px;
   }
   > button {
     padding-left:0px !important;

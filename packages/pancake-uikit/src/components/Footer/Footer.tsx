@@ -70,11 +70,10 @@ const MenuItem: React.FC<FooterProps> = ({
                     dropdownPosition="top-right"
                   />
                 </Col>
-                
               </Row>
               <Row justifyContent="space-between">
                 <Col>
-                  <CustomLink href="https://http://old-dapp.livetrade.io" target="_blank">Old DApp</CustomLink>
+                  <CustomLink href="https://old-dapp.livetrade.io" target="_blank">Old DApp</CustomLink>
                 </Col>
                 <Col>
                   <CustomLink href="https://krc.livetrade.io/#/" target="_blank">KRC DApp</CustomLink>
