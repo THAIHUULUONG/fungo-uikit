@@ -127,7 +127,7 @@ export const MoreInformation = [
     href: "https://bscscan.com/token/0xDbad544416Df0677254645422bB560AF8408cAe7",
   },
   {
-    label: "Audit",
+    label: "Audits",
     href: "https://github.com/verichains/public-audit-reports/blob/main/Verichains%20Pulbic%20Audit%20Report%20-%20LiveTrade%20Token%20and%20Treasury%20-%20v1.1.pdf",
   },
 ]
