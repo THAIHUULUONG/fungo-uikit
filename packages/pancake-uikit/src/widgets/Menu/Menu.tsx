@@ -186,7 +186,7 @@ const Menu: React.FC<NavProps> = ({
             <Footer
               items={footerLinks}
               isDark={isDark}
-              toggleTheme={toggleTheme}
+              // toggleTheme={toggleTheme}
               langs={langs}
               setLang={setLang}
               currentLang={currentLang}

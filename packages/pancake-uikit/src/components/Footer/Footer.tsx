@@ -52,7 +52,7 @@ const MenuItem: React.FC<FooterProps> = ({
         </CustomFlex>
         
 
-        <StyledToolsContainer
+        {/* <StyledToolsContainer
           order={[1, null, 3]}
           justifyContent="space-between"
         >
@@ -71,19 +71,11 @@ const MenuItem: React.FC<FooterProps> = ({
                   />
                 </Col>
               </Row>
-              <Row justifyContent="space-between">
-                <Col>
-                  <CustomLink href="https://old-dapp.livetrade.io" target="_blank">Old DApp</CustomLink>
-                </Col>
-                <Col>
-                  <CustomLink href="https://krc.livetrade.io/#/" target="_blank">KRC DApp</CustomLink>
-                </Col>
-              </Row>
           </ContainerFooter>
           <Flex justifyContent="space-between" alignItems="center">
               <CakePrice cakePriceUsd={cakePriceUsd} color="textSubtle" />
           </Flex>
-        </StyledToolsContainer>
+        </StyledToolsContainer> */}
       </Flex>
     </StyledFooter>
   );
