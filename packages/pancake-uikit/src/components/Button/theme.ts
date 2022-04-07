@@ -24,9 +24,9 @@ export const styleVariants = {
   [variants.SECONDARY]: {
     backgroundColor: "transparent",
     border: "2px solid",
-    borderColor: "primaryBright",
+    borderColor: "text",
     boxShadow: "none",
-    color: "primaryBright",
+    color: "text",
     ":disabled": {
       backgroundColor: "transparent",
     },
