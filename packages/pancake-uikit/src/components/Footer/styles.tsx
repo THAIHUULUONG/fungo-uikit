@@ -4,7 +4,7 @@ import { Box, Flex } from "../Box";
 import SocialLinks from "./Components/SocialLinks";
 
 export const StyledFooter = styled(Flex)`
-  background: ${({ theme }) => theme.colors.background};
+  background: ${({ theme }) => theme.colors.text};
   @media only screen and (max-width: 600px) {
     margin-bottom: 0px !important;
     padding-top:20px !important;
@@ -71,10 +71,12 @@ export const CustomFlex = styled(Flex)`
   }
 `
 export const CustomLink = styled.a`
-  color: ${({ theme }) => theme.colors.textSubtle};
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
 `
 export const ContainerMoreInformation = styled(Flex)`
-  width: 338px;
+  width: 358px;
   justify-content:space-between;
   @media only screen and (max-width: 600px) {
     width:100%;

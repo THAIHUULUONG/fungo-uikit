@@ -79,22 +79,22 @@ export const socials = [
   {
     label: "Globe",
     icon: "Globe",
-    href: "https://ltd.livetrade.io/",
+    href: "https://hesman.net/",
   },
   {
     label: "Facebook",
     icon: "Facebook",
-    href: "https://www.facebook.com/livetrade.io",
+    href: "https://www.facebook.com/hesman.net",
   },
   {
     label: "Twitter",
     icon: "Twitter",
-    href: "https://twitter.com/Livetrade_io",
+    href: "https://twitter.com/HesmanLegend",
   },
   {
     label: "Telegram",
     icon: "Telegram",
-    href: "https://t.me/LiveTradeLTD",
+    href: "https://t.me/HesmanLegend",
   },
   // {
   //   label: "GitLab",
@@ -115,20 +115,20 @@ export const socials = [
 ];
 export const MoreInformation = [
   {
-    label: "Whitepaper",
-    href: "https://ltd.livetrade.io/wp-content/uploads/2021/07/LTD-Whitepaper_Eng.pdf",
+    label: "WhitePager",
+    href: "https://docs.hesman.net/hesman-legend/du-an-hesman-legend/ve-hesman-legend",
   },
   {
     label: "Docs",
-    href: "https://docs.livetrade.io/",
+    href: "https://hesman.net/",
   },
   {
     label: "Smart Contract",
-    href: "https://bscscan.com/token/0xDbad544416Df0677254645422bB560AF8408cAe7",
+    href: "https://hesman.net/",
   },
   {
     label: "Audits",
-    href: "https://github.com/verichains/public-audit-reports/blob/main/Verichains%20Pulbic%20Audit%20Report%20-%20LiveTrade%20Token%20and%20Treasury%20-%20v1.1.pdf",
+    href: "https://hesman.net/",
   },
 ]
 
