@@ -28,7 +28,7 @@ const CakePrice: React.FC<Props> = ({ cakePriceUsd, color = "textSubtle" }) => {
   return cakePriceUsd ? (
     <Flex alignItems="center">
       <LogoRound width="24px" mr="8px" />
-      <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <Text color="#fff" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
     </Flex>
   ) : (
     <Skeleton width={80} height={24} />

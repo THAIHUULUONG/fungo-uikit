@@ -42,6 +42,10 @@ const StyledLink = styled("a")`
     }
   }
 `;
+const Img = styled.img`
+  width: auto;
+  height: 42.47px;
+`
 
 const Logo: React.FC<Props> = ({ isDark, href }) => {
   const { linkComponent } = useContext(MenuContext);
@@ -49,7 +53,8 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
   const innerLogo = (
     <>
       <LogoIcon className="mobile-icon" />
-      <LogoWithTextIcon className="desktop-icon" isDark={isDark} />
+      {/* <LogoWithTextIcon className="desktop-icon" isDark={isDark} /> */}
+      <Img src="https://hesman.net/wp-content/uploads/2022/02/hesman-logo.svg" alt="images-hesman" className="desktop-icon"/>
     </>
   );
 

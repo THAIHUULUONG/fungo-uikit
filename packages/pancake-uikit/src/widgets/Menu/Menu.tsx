@@ -26,10 +26,9 @@ const StyledNav = styled.nav`
   align-items: center;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: ${({ theme }) => theme.nav.background};
+  background-color: #000000;
   border-bottom: 2px solid ${({ theme }) => theme.colors.text};
   transform: translate3d(0, 0, 0);
-
   padding-left: 16px;
   padding-right: 16px;
 `;
@@ -147,11 +146,6 @@ const Menu: React.FC<NavProps> = ({
               {windowSize> 840 && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="12px" />}
             </Flex>
             <Flex alignItems="center" height="100%">
-              {!isMobile && (
-                <Box mr="12px">
-                  <CakePrice cakePriceUsd={cakePriceUsd} />
-                </Box>
-              )}
               <Box mt="4px">
                 <LangSelector
                   currentLang={currentLang}
@@ -190,7 +184,7 @@ const Menu: React.FC<NavProps> = ({
               langs={langs}
               setLang={setLang}
               currentLang={currentLang}
-              cakePriceUsd={cakePriceUsd}
+              // cakePriceUsd={cakePriceUsd}
               buyCakeLabel={buyCakeLabel}
               mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
             />

@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import  { createGlobalStyle } from "styled-components";
+
 
 const ResetCSS = createGlobalStyle`
   /* prettier-ignore */
@@ -85,7 +86,14 @@ const ResetCSS = createGlobalStyle`
     box-shadow: inset 0 0 5px ${({ theme }) => theme.colors.input}; 
     border-radius: 10px;
   }
-
+  @font-face {
+    src: url("../fonts/Chakra-Petch.ttf") format('ttf')
+  }
+  * {
+    font-family: 'Chakra Petch', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   /* Slider */ 
   input[type=range] {
     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */

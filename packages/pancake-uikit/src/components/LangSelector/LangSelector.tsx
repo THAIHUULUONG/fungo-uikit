@@ -30,8 +30,8 @@ const LangSelector: React.FC<Props> = ({
   <Dropdown
     position={dropdownPosition}
     target={
-      <Button paddingLeft="0px" paddingRight="0px" variant="text" startIcon={<LanguageIcon color={color} width="24px" />}>
-        {!hideLanguage && <Text color={color}>{currentLang?.toUpperCase()}</Text>}
+      <Button paddingLeft="0px" paddingRight="0px" variant="text" startIcon={<LanguageIcon color="#fff" width="24px" />}>
+        {!hideLanguage && <Text color="#fff">{currentLang?.toUpperCase()}</Text>}
       </Button>
     }
   >

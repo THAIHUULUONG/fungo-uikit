@@ -115,7 +115,7 @@ export const socials = [
 ];
 export const MoreInformation = [
   {
-    label: "WhitePager",
+    label: "WhitePaper",
     href: "https://docs.hesman.net/hesman-legend/du-an-hesman-legend/ve-hesman-legend",
   },
   {
