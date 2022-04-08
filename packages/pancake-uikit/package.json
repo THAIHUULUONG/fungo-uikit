@@ -1,6 +1,6 @@
 {
   "name": "@phamphu19498/hesman-uikit",
-  "version": "1.0.9",
+  "version": "1.2.1",
   "description": "Set of UI components for hesman projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
