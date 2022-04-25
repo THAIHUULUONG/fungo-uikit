@@ -26,11 +26,10 @@ const StyledNav = styled.nav`
   align-items: center;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: #000000;
-  border-bottom: 2px solid ${({ theme }) => theme.colors.text};
   transform: translate3d(0, 0, 0);
   padding-left: 16px;
   padding-right: 16px;
+  z-index:30;
 `;
 
 const FixedContainer = styled.div<{ showMenu: boolean; height: number }>`
@@ -80,6 +79,7 @@ const Menu: React.FC<NavProps> = ({
   langs,
   buyCakeLabel,
   children,
+  linksFooter,
 }) => {
   const { isMobile } = useMatchBreakpoints();
   const [windowSize, setWindowSize] = useState(window.innerWidth)
@@ -125,6 +125,7 @@ const Menu: React.FC<NavProps> = ({
 
     window.addEventListener("scroll", throttledHandleScroll);
     return () => {
+
       window.removeEventListener("scroll", throttledHandleScroll);
     };
   }, [totalTopMenuHeight]);
@@ -177,17 +178,18 @@ const Menu: React.FC<NavProps> = ({
         <BodyWrapper mt={!subLinks ? `${totalTopMenuHeight + 1}px` : "0"}>
           <Inner isPushed={false} showMenu={showMenu}>
             {children}
-            <Footer
+            {/* <Footer
               items={footerLinks}
               isDark={isDark}
               // toggleTheme={toggleTheme}
               langs={langs}
               setLang={setLang}
               currentLang={currentLang}
+              moreInfo={linksFooter}
               // cakePriceUsd={cakePriceUsd}
               buyCakeLabel={buyCakeLabel}
               mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
-            />
+            /> */}
           </Inner>
         </BodyWrapper>
         {windowSize<= 840 && <BottomNav items={links} activeItem={activeItem} activeSubItem={activeSubItem} />}

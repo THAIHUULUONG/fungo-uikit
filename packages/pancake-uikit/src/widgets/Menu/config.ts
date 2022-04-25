@@ -132,6 +132,20 @@ export const userMenulinks: DropdownMenuItems[] = [
     label: "Disconnect",
   },
 ];
+export const MoreInfo = [
+  {
+    label: "WhitePaper",
+    href: "https://docs.hesman.net/hesman-legend/du-an-hesman-legend/ve-hesman-legend",
+  },
+  {
+    label: "Docs",
+    href: "https://hesman.net/",
+  },
+  {
+    label: "Smart Contract",
+    href: "https://hesman.net/",
+  }
+]
 
 export const MENU_HEIGHT = 66;
 export const MENU_ENTRY_HEIGHT = 48;

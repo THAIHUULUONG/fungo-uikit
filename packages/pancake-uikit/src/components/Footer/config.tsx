@@ -125,11 +125,7 @@ export const MoreInformation = [
   {
     label: "Smart Contract",
     href: "https://hesman.net/",
-  },
-  {
-    label: "Audits",
-    href: "https://hesman.net/",
-  },
+  }
 ]
 
 export const langs: Language[] = [...Array(20)].map((_, i) => ({

@@ -14,6 +14,10 @@ export interface LinkStatus {
   text: string;
   color: keyof Colors;
 }
+export interface LinkFooter {
+    label: string;
+    href: string;
+}
 
 export interface NavProps {
   linkComponent?: ElementType;
@@ -32,4 +36,5 @@ export interface NavProps {
   buyCakeLabel: string;
   langs: Language[];
   setLang: (lang: Language) => void;
+  linksFooter?:LinkFooter[];
 }

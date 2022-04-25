@@ -45,6 +45,10 @@ const StyledLink = styled("a")`
 const Img = styled.img`
   width: auto;
   height: 42.47px;
+  @media only screen and (max-width: 600px) {
+    width: 80px;
+    height: auto;
+  }
 `
 
 const Logo: React.FC<Props> = ({ isDark, href }) => {
@@ -52,9 +56,9 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
-      {/* <LogoWithTextIcon className="desktop-icon" isDark={isDark} /> */}
-      <Img src="https://hesman.net/wp-content/uploads/2022/02/hesman-logo.svg" alt="images-hesman" className="desktop-icon"/>
+      {/* <LogoIcon className="mobile-icon" />
+      <LogoWithTextIcon className="desktop-icon" isDark={isDark} /> */}
+      <Img src="https://hesman.net/wp-content/uploads/2022/02/hesman-logo.svg" alt="images-hesman"/>
     </>
   );
 

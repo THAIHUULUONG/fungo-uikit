@@ -15,7 +15,7 @@ import Text from "../../components/Text/Text";
 import { Modal, ModalProps, useModal } from "../Modal";
 import UserMenu from "./components/UserMenu";
 import { Variant, variants } from "./components/UserMenu/types";
-import { links, userMenulinks } from "./config";
+import { links, userMenulinks, MoreInfo } from "./config";
 import Menu from "./Menu";
 import { Language, NavProps } from "./types";
 import BottomDrawer from "../../components/BottomDrawer/BottomDrawer";
@@ -64,10 +64,10 @@ const GlobalMenuComponent: React.FC = () => {
   return (
     <Flex>
       <IconButton onClick={onPresent1} variant="text" scale="sm" mr="4px">
-        <LanguageCurrencyIcon height={22} width={22} color="#fff" />
+        <LanguageCurrencyIcon height={22} width={22} color="text" />
       </IconButton>
       <IconButton onClick={onPresent2} variant="text" scale="sm" mr="8px">
-        <CogIcon height={22} width={22} color="#fff" />
+        <CogIcon height={22} width={22} color="text" />
       </IconButton>
     </Flex>
   );
@@ -95,6 +95,7 @@ const defaultProps = {
   activeItem: "/swap",
   activeSubItem: "https://exchange.pancakeswap.finance",
   buyCakeLabel: "Buy LTD",
+  linksFooter: MoreInfo
 };
 
 const ConnectedTemplate: React.FC<NavProps> = (args) => {
@@ -103,7 +104,7 @@ const ConnectedTemplate: React.FC<NavProps> = (args) => {
   return (
     <BrowserRouter>
       <Menu {...args}>
-        <div>
+        <div style={{marginTop:"-66px"}}>
           <Heading as="h1" mb="8px">
             Page body
           </Heading>

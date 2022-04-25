@@ -35,6 +35,7 @@ const MenuItem: React.FC<FooterProps> = ({
   setLang,
   cakePriceUsd,
   buyCakeLabel,
+  moreInfo,
   ...props
 }) => {
   return (
@@ -42,11 +43,15 @@ const MenuItem: React.FC<FooterProps> = ({
       <Flex flexDirection="column" width={["100%", null, "1200px;"]}>
         <CustomFlex>
             <ContainerMoreInformation>
-              {MoreInformation.map((items) => {
-                return (
-                  <CustomLink href={items.href} target="_blank">{items.label}</CustomLink>
-                );
-              })}
+              { moreInfo &&
+                <>
+                  {moreInfo.map((items) => {
+                    return (
+                      <CustomLink href={items.href} target="_blank">{items.label}</CustomLink>
+                    );
+                  })}
+                </>
+              }
             </ContainerMoreInformation>
             <SocialLinks order={[2]}/>
         </CustomFlex>

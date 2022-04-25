@@ -5,6 +5,10 @@ export type FooterLinkType = {
   label: string;
   items: { label: string; href?: string; isHighlighted?: boolean }[];
 };
+export type MoreInfoType = {
+    label: string;
+    href: string;
+};
 
 export type FooterProps = {
   items: FooterLinkType[];
@@ -15,4 +19,5 @@ export type FooterProps = {
   currentLang: string;
   langs: Language[];
   setLang: (lang: Language) => void;
+  moreInfo?:MoreInfoType[];
 } & FlexProps;
