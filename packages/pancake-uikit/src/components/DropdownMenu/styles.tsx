@@ -11,13 +11,13 @@ const getTextColor = ({
   if (disabled) return theme.colors.textDisabled;
   if ($isActive) return theme.colors.primaryBright;
 
-  return theme.colors.textSubtle;
+  return theme.colors.text;
 };
 
 export const DropdownMenuItem = styled.button<StyledDropdownMenuItemProps & { $isActive: boolean }>`
   align-items: center;
   border: 0;
-  background: ${({ theme }) => theme.colors.background};
+  background: #000;
   color: ${({ theme, disabled, $isActive }) => getTextColor({ theme, disabled, $isActive })};
   cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   font-weight: ${({ $isActive = false }) => ($isActive ? "600" : "400")};
@@ -59,7 +59,7 @@ export const DropdownMenuDivider = styled.hr`
 `;
 
 export const StyledDropdownMenu = styled.div<{ $isOpen: boolean; $isBottomNav: boolean }>`
-  background-color: ${({ theme }) => theme.card.background};
+  background-color:#000;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 16px;
   pointer-events: auto;

@@ -7,7 +7,7 @@ import { Colors } from "../../../../theme/types";
 
 const MenuIconWrapper = styled.div<{ borderColor: keyof Colors }>`
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #000;
   border-color: ${({ theme, borderColor }) => theme.colors[borderColor]};
   border-radius: 50%;
   border-style: solid;
@@ -17,7 +17,8 @@ const MenuIconWrapper = styled.div<{ borderColor: keyof Colors }>`
   justify-content: center;
   left: 0;
   position: absolute;
-  top: -4px;
+  top: -6px;
+  left:-2px;
   width: 40px;
   z-index: 102;
 `;

@@ -31,7 +31,7 @@ const LangSelector: React.FC<Props> = ({
     position={dropdownPosition}
     target={
       <Button paddingLeft="0px" paddingRight="0px" variant="text" startIcon={<LanguageIcon color="#fff" width="24px" />}>
-        {!hideLanguage && <Text color="#fff">{currentLang?.toUpperCase()}</Text>}
+        {!hideLanguage && <Text color="#fff" fontSize="18px">{currentLang?.toUpperCase()}</Text>}
       </Button>
     }
   >
@@ -43,7 +43,7 @@ const LangSelector: React.FC<Props> = ({
         // Safari fix
         style={{ minHeight: "32px", height: "auto" }}
       >
-        {lang.language}
+        <Text color="text" fontSize="18px">{lang.language}</Text>
       </MenuButton>
     ))}
   </Dropdown>

@@ -46,12 +46,13 @@ const getOpacity = ({ $isLoading = false }: TransientButtonProps) => {
 const StyledButton = styled.button<BaseButtonProps>`
   align-items: center;
   border: 0;
-  border-radius: 16px;
+  border-radius: 40px;
   cursor: pointer;
   display: inline-flex;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;

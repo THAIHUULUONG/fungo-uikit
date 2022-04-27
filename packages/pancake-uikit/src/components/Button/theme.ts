@@ -19,16 +19,18 @@ export const scaleVariants = {
 export const styleVariants = {
   [variants.PRIMARY]: {
     backgroundColor: "primaryBright",
-    color: "white",
+    color: "black",
   },
   [variants.SECONDARY]: {
     backgroundColor: "transparent",
     border: "2px solid",
-    borderColor: "text",
+    borderColor: "#1A0E67",
     boxShadow: "none",
-    color: "text",
+    color: "#fff",
+    borderRadius:"40px",
     ":disabled": {
       backgroundColor: "transparent",
+      borderColor:"#1A0E67"
     },
   },
   [variants.TERTIARY]: {

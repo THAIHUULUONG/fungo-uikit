@@ -8,24 +8,23 @@ import MenuIcon from "./MenuIcon";
 import { UserMenuItem } from "./styles";
 
 export const StyledUserMenu = styled(Flex)`
-  align-items: center;
-  background-color: #fff;
+  align-items: center !important;
+  background-color: #000;
   border-radius: 16px;
-  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
+  border:2px solid  ${({ theme }) => theme.colors.primaryBright};
   cursor: pointer;
   display: inline-flex;
   height: 32px;
   padding-left: 40px;
   padding-right: 8px;
   position: relative;
-
   &:hover {
     opacity: 0.65;
   }
 `;
 
 export const LabelText = styled.div`
-  color: ${({ theme }) => theme.colors.primaryBright};
+  color: #fff;
   display: none;
   font-weight: 600;
 
@@ -37,8 +36,8 @@ export const LabelText = styled.div`
 `;
 
 const Menu = styled.div<{ isOpen: boolean }>`
-  background-color: ${({ theme }) => theme.card.background};
-  border: 1px solid ${({ theme }) => theme.colors.cardBorder};
+  background-color: #000;
+  border: 1px solid ${({ theme }) => theme.colors.borderLine};
   border-radius: 16px;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -112,7 +111,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
       >
         <MenuIcon avatarSrc={avatarSrc} variant={variant} />
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
-        <ChevronDownIcon color="primaryBright" width="24px" />
+        <ChevronDownIcon color="#fff" width="24px" />
       </StyledUserMenu>
       <Menu style={styles.popper} ref={setTooltipRef} {...attributes.popper} isOpen={isOpen}>
         <Box onClick={() => setIsOpen(false)}>{children}</Box>
