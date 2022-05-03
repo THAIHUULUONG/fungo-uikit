@@ -21,9 +21,12 @@ const getPadding = (scale: Scales, hasIcon: boolean) => {
 };
 
 const StyledInputGroup = styled(Box)<{ scale: Scales; hasStartIcon: boolean; hasEndIcon: boolean }>`
+  border:1px solid ${({ theme }) => theme.colors.borderLine};
+  background: transparent;
   ${Input} {
     padding-left: ${({ hasStartIcon, scale }) => getPadding(scale, hasStartIcon)};
     padding-right: ${({ hasEndIcon, scale }) => getPadding(scale, hasEndIcon)};
+    background: transparent;
   }
 `;
 
@@ -33,7 +36,9 @@ const InputIcon = styled.div<{ scale: Scales; isEndIcon?: boolean }>`
   height: 100%;
   position: absolute;
   top: 0;
-
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
   ${({ isEndIcon, scale }) =>
     isEndIcon
       ? `

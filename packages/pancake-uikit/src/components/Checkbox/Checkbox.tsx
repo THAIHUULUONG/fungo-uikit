@@ -24,7 +24,7 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
   border: 0;
   border-radius: 8px;
   background-color: transparent;
-  border:1px solid ${({ theme }) => theme.colors.text};
+  border:1px solid ${({ theme }) => theme.colors.cardBorder};
   &:after {
     content: "";
     position: absolute;
@@ -44,7 +44,7 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
     background-color: ${({ theme }) => theme.colors.primaryBright};
     border:none;
     &:after {
-      border-color: white;
+      border-color: ${({ theme }) => theme.colors.success};
     }
   }
 

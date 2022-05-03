@@ -17,9 +17,9 @@ export const UnitContainer = styled(Text)`
 `;
 
 export const StyledBalanceInput = styled(Box)<{ isWarning: BalanceInputProps["isWarning"] }>`
-  background-color: ${({ theme }) => theme.colors.input};
-  border: 1px solid ${({ theme }) => theme.colors.inputSecondary};
-  border-radius: 16px;
+  background-color:transparent;
+  border: 1px solid ${({ theme }) => theme.colors.borderLine};
+  border-radius: 12px;
   box-shadow: ${({ theme, isWarning }) => theme.shadows[isWarning ? "warning" : "inset"]};
   padding: 8px 16px;
 `;
@@ -34,7 +34,7 @@ export const StyledInput = styled(Input)<{ textAlign?: string }>`
   border: none;
 
   ::placeholder {
-    color: ${({ theme }) => theme.colors.textSubtle};
+    color: ${({ theme }) => theme.colors.text};
   }
 
   &:focus:not(:disabled) {

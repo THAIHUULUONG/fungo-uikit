@@ -5,7 +5,7 @@ import { Handler } from "./types";
 
 const useModal = (
   modal: React.ReactNode,
-  closeOnOverlayClick = true,
+  closeOnOverlayClick = false,
   updateOnPropsChange = false,
   modalId = "defaultNodeId"
 ): [Handler, Handler] => {
