@@ -52,7 +52,6 @@ const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", acti
           );
         })}
       </StyledBottomNav>
-      {/* <BackgroundMenu/> */}
     </>
   );
 };

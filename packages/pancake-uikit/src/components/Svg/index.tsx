@@ -156,6 +156,6 @@ export { default as MartketpalceIcon } from "./Icons/Martketpalce";
 export { default as ExchangeIcon } from "./Icons/Exchange";
 export { default as GitLabIcon } from "./Icons/GitLab";
 export { default as BackgroundMenu } from "./Icons/BackgroundMenu";
-
+export { default as BuyHesicIcon } from "./Icons/BuyHESIC";
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";

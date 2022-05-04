@@ -20,8 +20,8 @@ export const status = {
 
 export const links: MenuItemsType[] = [
   {
-    label: 'Trade',
-    icon: 'Swap',
+    label: 'Home',
+    icon: 'Home',
     href: '/swap',
     showItemsOnMobile: true,
     items: [
@@ -36,9 +36,9 @@ export const links: MenuItemsType[] = [
     ],
   },
   {
-    label: 'Earn',
+    label: 'Buy HESIC',
     href: '/farms',
-    icon: 'Earn',
+    icon: 'Trade',
     items: [
       {
         label:'Farms',
@@ -52,7 +52,7 @@ export const links: MenuItemsType[] = [
   },
   {
     label: 'Membership',
-    icon: 'Membership',
+    icon: 'Earn',
     href: '/membership',
     showItemsOnMobile:true,
     items: [
