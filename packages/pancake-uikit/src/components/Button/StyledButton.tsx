@@ -52,7 +52,7 @@ const StyledButton = styled.button<BaseButtonProps>`
   font-family: 'Chakra Petch';
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;

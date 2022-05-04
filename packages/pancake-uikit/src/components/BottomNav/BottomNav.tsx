@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import styled from "styled-components";
+import { BackgroundMenu } from "../Svg";
 import BottomNavItem from "../BottomNavItem";
 import StyledBottomNav from "./styles";
 import { Box } from "../Box";
@@ -7,6 +9,12 @@ import { BottomNavProps } from "./types";
 import { NotificationDot } from "../NotificationDot";
 import { Overlay } from "../Overlay";
 
+const CustomBackgroundMenu = styled(BackgroundMenu)`
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+`
 const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", activeSubItem = "", ...props }) => {
   const [menuOpenByIndex, setMenuOpenByIndex] = useState({});
   const isBottomMenuOpen = Object.values(menuOpenByIndex).reduce((acc, value) => acc || value, false);
@@ -14,6 +22,7 @@ const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", acti
     <>
       {isBottomMenuOpen && <Overlay />}
       <StyledBottomNav justifyContent="space-around" {...props}>
+        <CustomBackgroundMenu/>
         {items.map(({ label, items: menuItems, href, icon, showOnMobile = true, showItemsOnMobile = true }, index) => {
           const statusColor = menuItems?.find((menuItem) => menuItem.status !== undefined)?.status?.color;
           return (
@@ -43,6 +52,7 @@ const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", acti
           );
         })}
       </StyledBottomNav>
+      {/* <BackgroundMenu/> */}
     </>
   );
 };
