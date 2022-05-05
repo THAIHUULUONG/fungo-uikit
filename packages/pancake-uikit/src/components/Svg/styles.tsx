@@ -30,7 +30,6 @@ export const StyledAnimatedIconComponent = styled.div<{
       bottom: 0;
       overflow:hidden;
     }
-
     div:last-child {
       height: 0;
       z-index: 5;
@@ -46,4 +45,5 @@ export const StyledAnimatedIconComponent = styled.div<{
       ${`width: ${width || "100%"}`};
     }
   `}
+
 `;

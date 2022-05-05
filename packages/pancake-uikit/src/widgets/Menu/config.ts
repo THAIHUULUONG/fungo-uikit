@@ -21,7 +21,7 @@ export const status = {
 export const links: MenuItemsType[] = [
   {
     label: 'Home',
-    icon: 'Home',
+    icon: 'Trade',
     href: '/swap',
     showItemsOnMobile: true,
     items: [
@@ -52,7 +52,7 @@ export const links: MenuItemsType[] = [
   },
   {
     label: 'Membership',
-    icon: 'Earn',
+    icon: 'clear',
     href: '/membership',
     showItemsOnMobile:true,
     items: [
