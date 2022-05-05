@@ -11,9 +11,10 @@ import { Overlay } from "../Overlay";
 
 const CustomBackgroundMenu = styled(BackgroundMenu)`
     position: absolute;
-    top:0px;
+    bottom:0px;
     left:0px;
     z-index: -1;
+    width: 100%;
 `
 const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", activeSubItem = "", ...props }) => {
   const [menuOpenByIndex, setMenuOpenByIndex] = useState({});
