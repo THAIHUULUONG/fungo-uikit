@@ -38,7 +38,7 @@ export const links: MenuItemsType[] = [
   {
     label: 'Buy HESIC',
     href: '/farms',
-    icon: 'Trade',
+    icon: 'Earns',
     items: [
       {
         label:'Farms',

@@ -3,9 +3,10 @@ import { Flex } from "../Box";
 
 const StyledBottomNav = styled(Flex)`
   bottom: 0px;
+  background: #040023;
   width: 100%;
-  height: 100px;
-  padding-top:12px;
+  height: 80px;
+  padding-top:2px;
   align-items: center;
   justify-content: space-around;
   position: relative;

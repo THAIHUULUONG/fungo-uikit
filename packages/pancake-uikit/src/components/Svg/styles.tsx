@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { Colors } from "../../theme";
 
-export const StyledIconContainer = styled.div<{ activeBackgroundColor?: keyof Colors }>`
+export const StyledIconContainer = styled.div<{ activeBackgroundColor?: keyof Colors, isActive?:boolean }>`
   background: ${({ activeBackgroundColor, theme }) =>
     activeBackgroundColor ? theme.colors[activeBackgroundColor] : "transparent"};
+  
 `;
 
 export const StyledAnimatedIconComponent = styled.div<{
@@ -45,5 +46,9 @@ export const StyledAnimatedIconComponent = styled.div<{
       ${`width: ${width || "100%"}`};
     }
   `}
-
+  ${StyledIconContainer}{
+    > svg > path {
+      stroke: ${({ theme, isActive }) => isActive === true ? theme.colors.primaryBright : "#ffff"} !important;
+    }
+  }
 `;

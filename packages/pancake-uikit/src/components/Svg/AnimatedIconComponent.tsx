@@ -16,6 +16,7 @@ const AnimatedIconComponent: React.FC<IconComponentType> = ({
   const IconElement = Icons[`${iconName}Icon`];
   const IconElementFill = Icons[`${iconName}FillIcon`];
   const hasFillIcon = IconElementFill !== undefined;
+  console.log(isActive)
   return IconElement ? (
     <StyledAnimatedIconComponent isActive={isActive} hasFillIcon={hasFillIcon} {...props}>
       <StyledIconContainer>
