@@ -158,5 +158,6 @@ export { default as GitLabIcon } from "./Icons/GitLab";
 export { default as BackgroundMenu } from "./Icons/BackgroundMenu";
 export { default as BuyHesicIcon } from "./Icons/BuyHESIC";
 export { default as EarnsIcon } from "./Icons/EarnsIcon";
+export { default as IDOIcon } from "./Icons/IDO";
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";

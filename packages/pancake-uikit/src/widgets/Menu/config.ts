@@ -21,7 +21,7 @@ export const status = {
 export const links: MenuItemsType[] = [
   {
     label: 'Home',
-    icon: 'Trade',
+    icon: 'IDO',
     href: '/swap',
     showItemsOnMobile: true,
     items: [
@@ -38,7 +38,7 @@ export const links: MenuItemsType[] = [
   {
     label: 'Buy HESIC',
     href: '/farms',
-    icon: 'Earns',
+    icon: 'IDO',
     items: [
       {
         label:'Farms',
