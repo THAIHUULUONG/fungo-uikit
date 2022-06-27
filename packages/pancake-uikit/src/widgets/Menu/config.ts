@@ -21,7 +21,7 @@ export const status = {
 export const links: MenuItemsType[] = [
   {
     label: 'Home',
-    icon: 'IDO',
+    icon: 'ShopVoucher',
     href: '/swap',
     showItemsOnMobile: true,
     items: [
