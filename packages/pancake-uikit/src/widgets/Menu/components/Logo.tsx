@@ -58,7 +58,7 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
     <>
       {/* <LogoIcon className="mobile-icon" />
       <LogoWithTextIcon className="desktop-icon" isDark={isDark} /> */}
-      <Img src="https://hesman.net/wp-content/uploads/2022/02/hesman-logo.svg" alt="images-hesman"/>
+      <Img src="https://i.imgur.com/JhFCP0a.png" alt="images-hesman"/>
     </>
   );
 

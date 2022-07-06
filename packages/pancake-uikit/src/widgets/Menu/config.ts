@@ -20,75 +20,41 @@ export const status = {
 
 export const links: MenuItemsType[] = [
   {
-    label: 'Home',
-    icon: 'ShopVoucher',
-    href: '/swap',
-    showItemsOnMobile: true,
-    items: [
-      {
-        label: 'Exchange',
-        href: '/swap',
-      },
-      {
-        label: 'Liquidity',
-        href: '/liquidity',
-      },
-    ],
-  },
-  {
-    label: 'Buy HESIC',
-    href: '/farms',
-    icon: 'IDO',
-    items: [
-      {
-        label:'Farms',
-        href: '/farms',
-      },
-      {
-        label: 'Pools',
-        href: '/pools',
-      },
-    ],
-  },
-  {
-    label: 'Membership',
+    label: 'Buy MINION',
     icon: 'clear',
-    href: '/membership',
+    href: '/buyminion',
     showItemsOnMobile:true,
     items: [
       {
-        label: 'Membership',
-        href: '/membership',
+        label: 'Buy MINION',
+        href: '/buyminion',
       },
     ]
   },
   {
-    label: 'DIPO ®',
-    icon: 'Dipo',
-    href: '/dipo/live',
+    label: 'Buy DEMI',
+    icon: 'clear',
+    href: '/buydemi',
     showItemsOnMobile:true,
     items: [
       {
-        label: 'DIPO®',
-        href: '/dipo/live',
+        label: 'Buy DEMI',
+        href: '/buydemi',
       },
     ]
   },
   {
-    label: 'More',
-    icon: 'More',
-    href: '/repo',
+    label: 'Les Plus Beaux Paroles',
+    icon: 'clear',
+    href: '/message',
+    showItemsOnMobile:true,
     items: [
       {
-        label: 'Repo',
-        href: '/repo',
-      },
-      {
-        label: 'Marketplace',
-        href: '/nftmarketplace',
+        label: 'Les Plus Beaux Paroles',
+        href: '/message',
       },
     ]
-  }
+  },
 ];
 
 export const userMenulinks: DropdownMenuItems[] = [
